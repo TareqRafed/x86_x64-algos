@@ -11,8 +11,10 @@ Return fib(n); where n is the input
 INCLUDE Irvine32.inc
 
 .data
-intNum    DWORD ?
 promptBad BYTE "Invalid input, please enter again", 0dh, 0ah ,0
+
+.data?
+intNum DWORD ?
 
 .code
 main PROC
