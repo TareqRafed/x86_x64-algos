@@ -1,23 +1,28 @@
 
 global _start
 
-STDIN           equ 0
-SYS_read        equ 0x3
+%include "/home/tariq/projects/asm/x86/nasm/library/writeInt.asm"
+
+%include "/home/tariq/projects/asm/x86/nasm/library/readInt.asm"
+
+%include "/home/tariq/projects/asm/x86/nasm/library/exit.asm"
+
 
 section .data
-    promptBad db "Invalid input, please enter again", 0xD, 0xA, 0
+    promptBad db "Invalid input, please enter again", 0xA, 0
 
 segment .bss
    inputChar resb 1  
 
 section .text
 _start:
-    .read:
-        mov eax, SYS_read      ; syscall read
-        mov ebx, STDIN         ; stdin
-        mov ecx, inputChar
-        mov edx, 0x2           ; input length
-        int 0x80
+    mov edx, inputChar
+    call readInt
+
+    call writeInt
+    
+
+    call exit
 
         ; TODO: Implement ASCII to Digit
     
