@@ -19,6 +19,7 @@ _start:
     mov edx, inputChar
     call readInt
 
+    mov edx, promptBad
     call writeInt
     
 
