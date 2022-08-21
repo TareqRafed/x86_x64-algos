@@ -28,7 +28,7 @@ You have to install NASM.
        cd x86/nasm
        make File=%Name of the algo you want to run%
    
-   *Note: You should only pass the root files in x86/nasm*
+   *Note: You should only pass the root file name in x86/nasm*
    *Example:*
 		   
 
