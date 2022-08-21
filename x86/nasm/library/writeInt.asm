@@ -2,9 +2,9 @@
 
 GLOBAL writeInt
 
-%include "/home/tariq/projects/asm/x86/nasm/library/countStr.asm"
+%include "x86/nasm/library/countStr.asm"
 
-%include "/home/tariq/projects/asm/x86/nasm/library/global.asm"
+%include "x86/nasm/library/global.asm"
 
 
 section .text

@@ -1,11 +1,11 @@
 
 global _start
 
-%include "/home/tariq/projects/asm/x86/nasm/library/writeInt.asm"
+%include "x86/nasm/library/writeInt.asm"
 
-%include "/home/tariq/projects/asm/x86/nasm/library/readInt.asm"
+%include "x86/nasm/library/readInt.asm"
 
-%include "/home/tariq/projects/asm/x86/nasm/library/exit.asm"
+%include "x86/nasm/library/exit.asm"
 
 
 section .data

@@ -2,7 +2,7 @@
 
 GLOBAL exit
 
-%include "/home/tariq/projects/asm/x86/nasm/library/global.asm"
+%include "x86/nasm/library/global.asm"
 
 
 section .text
