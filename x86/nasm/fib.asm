@@ -1,11 +1,11 @@
 
 global _start
 
-%include "x86/nasm/library/writeInt.asm"
+%include "library/writeInt.asm"
 
-%include "x86/nasm/library/readInt.asm"
+%include "library/readInt.asm"
 
-%include "x86/nasm/library/exit.asm"
+%include "library/exit.asm"
 
 
 section .data

@@ -2,7 +2,7 @@
 
 GLOBAL exit
 
-%include "x86/nasm/library/global.asm"
+%include "library/global.asm"
 
 
 section .text

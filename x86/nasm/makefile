@@ -11,3 +11,9 @@ test:	$(File).o
 
 buildThenClean: test
 				rm -i $(File).o test
+
+
+debug:
+	 nasm -g -F dwarf -f elf64 $(File).asm
+	 ld -o test $(File).o
+	 gdb ./test

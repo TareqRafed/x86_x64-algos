@@ -2,9 +2,9 @@
 
 GLOBAL writeInt
 
-%include "x86/nasm/library/countStr.asm"
+%include "library/countStr.asm"
 
-%include "x86/nasm/library/global.asm"
+%include "library/global.asm"
 
 
 section .text

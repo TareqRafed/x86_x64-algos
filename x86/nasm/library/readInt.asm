@@ -2,7 +2,8 @@
 
 GLOBAL readInt
 
-%include "x86/nasm/library/global.asm"
+%include "library/global.asm"
+%include "library/asciiToInt.asm"
 
 
 section .text
@@ -21,6 +22,9 @@ section .text
         int 0x80
 
         pop edx
+        mov byte [edx + 0x0A], 0       ; add null terminator
+
+        call asciiToInt
 
         pop ecx
         pop ebx
